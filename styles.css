@@ -200,6 +200,7 @@ scale: 0.8;
     font-weight: 600;
     color: #5881F3;
     letter-spacing: 0.4px;
+      text-align:center;
   }
   .album-name {
     text-align: center;
