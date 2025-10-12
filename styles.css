@@ -40,6 +40,8 @@ a{
   transition: 0.5s;
 
 }
+
+
 #downloads button img:hover{
   filter: brightness(0.5);
    scale: 1.1;
@@ -59,7 +61,15 @@ button:hover{
 #biglogo{
     text-align: center;
 }
-
+#downloadBtn{
+    background-color: #ffffff;
+    /* border: none; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
 
 @keyframes gradient {
@@ -200,7 +210,6 @@ scale: 0.8;
     font-weight: 600;
     color: #5881F3;
     letter-spacing: 0.4px;
-      text-align:center;
   }
   .album-name {
     text-align: center;
