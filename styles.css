@@ -59,6 +59,24 @@ a{
 
 }
 
+.embed-container {
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.embed-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .popup-content {
+        width: 90%;
+        padding: 5px;
+    }
+}
+
 
 #downloads button img:hover{
   filter: brightness(0.5);
