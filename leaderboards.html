@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboards</title>
+    <link rel="icon" href="../logo2.png" />
+    <link rel="stylesheet" href="leaderboards.css" />
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <section class="leaderboard">
+      <div class="leaderboard-header">
+        <!-- <span class="leaderboard-label">LEXIFY COMPETITIVE</span> -->
+        <h1>LEADERBOARDS</h1>
+        <p>Some Lexify 3 Minigames</p>
+      </div>
+
+      <div class="leaderboard-content">
+        <div class="leaderboard-title">
+          <h2 id="boardTitle">Gun Score</h2>
+          <span>TOP 10</span>
+        </div>
+
+        <div class="leaderboard-columns">
+          <span>RANK</span>
+          <span>PLAYER</span>
+          <span>SCORE</span>
+        </div>
+
+        <div id="leaderboardResults">
+          <p class="leaderboard-loading">Loading leaderboard...</p>
+        </div>
+      </div>
+
+      <br>
+      <div class="leaderboard-tabs">
+        <button class="leaderboard-tab active" data-board="gun_score">
+          Gun Combo
+        </button>
+        <button class="leaderboard-tab" data-board="ball_score">
+          Dunks
+        </button>
+         <button class="leaderboard-tab" data-board="swings">Swings</button>
+        <button class="leaderboard-tab" data-board="speedrun_time">
+          Speedrun
+        </button>
+       
+      </div>
+
+      <div class="leaderboard-footer">
+        <span></span>
+        <span>Get your spot in Lexify 3!</span>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
