@@ -10,7 +10,84 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
   <body>
-    <div id="navbar"></div>
+   
+<nav id="navbar">
+
+    <div class="nav-brand">
+        <img id="logo" height="60" alt="" src="../logo.png" />
+        <a class="nav-title" href="index.html">LEXIFY</a>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul id="navLinks">
+
+        <li>
+            <a href="index.html" onclick="closeMenu()" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="mp3/mp3.html" onclick="closeMenu()" class="nav-link">
+                <i class="fa-solid fa-music"></i>
+                <span>MP3</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="leaderboards.html" onclick="closeMenu()" class="nav-link">
+                <i class="fa-solid fa-ranking-star"></i>
+                <span>Leaderboards</span>
+            </a>
+        </li>
+
+        <li>
+            <button id="downloadBtn" onclick="closeMenu(); openPopup()">
+                <i class="fa-solid fa-download"></i>
+                <span>Download</span>
+            </button>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<div class="popup" id="popup" onclick="closePopup()">
+  <div class="popup-content" onclick="closePopup()">
+    <!-- <span class="close" onclick="closePopup()">&times;</span> -->
+    <div class="embed-container">
+      <iframe
+        frameborder="0"
+        src="https://itch.io/embed/3571001?linkback=true&amp;border_width=5&amp;bg_color=00073e&amp;fg_color=eeeeee&amp;link_color=0094bc&amp;border_color=003280"
+        width="560"
+        height="175"
+        ><a href="https://lexifyco.itch.io/lexify-2"
+          >Lexify 2 by LexifyCo</a
+        ></iframe
+      >
+    </div>
+
+    <div class="embed-container">
+      <iframe
+        frameborder="0"
+        src="https://itch.io/embed/3954172?border_width=3&amp;bg_color=000414&amp;fg_color=25dfff&amp;link_color=5be2fa&amp;border_color=00c6de"
+        width="556"
+        height="171"
+        ><a href="https://lexifyco.itch.io/lexify-3"
+          >Lexify 3 by LexifyCo</a
+        ></iframe
+      >
+    </div>
+  </div>
+</div>
+
+
+
 
 <main class="home">
 
